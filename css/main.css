@@ -1,0 +1,782 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+   /*Fonts*/
+   @font-face {
+      font-family: 'gotham-thin';
+      src: url('../fonts/gotham-thin.otf'); /* IE9 Compat Modes */
+      src: url('../fonts/gotham-thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/gotham-thin.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/gotham-thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/gotham-thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+   }
+
+
+   /*Fonts*/
+   @font-face {
+      font-family: 'gotham-light';
+      src: url('../fonts/gotham-light.otf'); /* IE9 Compat Modes */
+      src: url('../fonts/gotham-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/gotham-light.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/gotham-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/gotham-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+   }
+
+
+
+   /*Generic*/
+
+
+   #login-form{
+      color: white;
+      z-index: 200;
+      position: relative;
+      max-width: 400px;
+      margin: 30px auto 0px;
+      width: 100%;
+      padding: 0px 10px;
+   }
+
+   #login-form button{
+
+      border:1px solid white;
+      background-color: transparent;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-family: 'gotham-light';
+      margin-top: 25px;
+
+
+   }
+
+   #login-form .form-control{
+
+      border-radius: 0px;
+      margin-bottom: 10px;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      text-align: center;
+
+   }
+
+
+   /*Sections*/
+
+   #seccion0{
+
+      height: 100%;
+      width: 100%;
+
+      background-image: url(../img/masaje-mano.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      position: relative;
+
+   }
+
+   #seccion0:before{
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 100;
+
+   }
+
+
+   #seccion0 header{
+      /*padding-top: 10%;*/
+   }
+
+   #seccion0 .contact-info{
+      color: #FFF;
+      font-size: 17px;
+      margin-bottom: 25px;
+   }
+
+   #seccion0 .contact-info .glyphicon{
+      color: #D9534F;
+   }
+
+   #seccion0 .contact-info a{
+      color: #fff;
+   }
+
+   #seccion0 .valign{
+      position: absolute;
+      top: 50%;
+      margin-top: -160px;
+      width: 100%;
+   }
+
+   #seccion0 header, #seccion0 section{
+      z-index: 200;
+      position: relative;
+   }
+
+
+
+
+   #seccion0 header h1{
+      font-family: 'gotham-thin';
+      color:white;
+      font-size: 100px;
+      text-align: center;
+      margin: 0px;
+
+
+
+
+
+   }
+
+
+
+
+   #seccion0 header h2{
+      font-family: 'gotham-thin';
+      color:white;
+      font-size: 50px;
+      text-align: center;
+
+   }
+
+
+
+
+   #seccion0 #home-buttons {
+
+      text-align: center;
+      margin-top: 20px;
+
+   }
+
+   #seccion0 #home-buttons a{
+
+
+      display:inline-block;
+      color:white;
+      font-family:'gotham-light';
+      font-size: 25px;
+      padding: 10px;
+      border:1px solid white;
+      margin: 0px 20px; 
+      text-decoration: none;  
+
+
+      transition: 0.4s all ease-out;
+
+
+
+   }
+
+   #seccion0 #home-buttons a:hover{
+
+      text-decoration: none;
+
+      background-color: white;
+      color: black;
+
+
+   }
+
+
+   #seccion1{
+      padding: 20px 0;
+      position: relative;
+   }  
+
+
+   #seccion1 .service{
+
+      position: relative;
+      margin-bottom: 20px;
+
+   }
+
+   #seccion1 .service .img-wrapper{
+
+      position: relative;  
+
+   }
+
+   #seccion1 .service .img-wrapper .overlay{
+      content: 'asd';   
+      text-align: center;
+      padding-top: 20px;
+      color:white ;
+      background-color: rgba(0,0,0,0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+
+      transition: 0.4s all ease-in-out;
+
+   }
+
+   #seccion1 .service .img-wrapper .overlay {
+
+      font-family: 'gotham-thin';
+      font-size: 21px;
+      text-transform: uppercase;
+   }
+
+   #seccion1 .service .img-wrapper .overlay > div{
+
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      margin-top: -39px;
+   }
+
+
+
+   #seccion1 .service .img-wrapper .overlay .plus{
+
+      display: block;
+      font-size: 107px;
+      font-family: 'gotham-thin';
+      line-height: 73px;
+
+   }
+
+
+   #seccion1 .service .img-wrapper:hover .overlay{
+      opacity: 1;
+   }
+
+   #seccion1 .price-wrapper{
+
+      display: table-cell;
+      background-color: #D9534F;
+      padding: 10px;
+      color: white;
+      font-size: 37px;
+      position: relative;
+
+
+   }
+
+
+
+
+
+   #seccion1 .price-wrapper .desde  {
+
+      display: block;
+      font-size: 12px;
+      line-height: 10px;
+
+   }
+
+
+   #seccion1 .price-wrapper .euro{
+
+      font-size: 16px;
+   }
+
+   #seccion1 .text-wrapper{
+
+      font-family: 'gotham-light';
+      font-weight: normal;
+      text-align: left;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0px 10px;
+      font-size: 19px;
+
+      padding-top: 10px;
+
+      text-transform: uppercase;
+
+
+   }
+
+   #seccion1 #massage{
+
+
+   }
+
+
+   #seccion1 #makeup{
+
+
+
+   }
+
+
+   #seccion1 #wax{
+
+
+
+   }
+
+   #seccion1 #manicure{
+
+
+
+   }
+
+
+   #seccion1 #facial{
+
+   }
+
+
+
+   #seccion1 #eyes{
+
+
+
+   }
+
+   #wedding{
+
+
+      background-image: url(../img/wedding-bg.jpg);
+      color: white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+   }
+
+   #wedding .portrait{
+      padding:20px 0px;
+   }
+
+   #wedding .portrait img{
+      border-radius: 100%;
+   }
+
+   #wedding:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color:rgba(0,0,0,0.5);
+   }
+
+   #wedding h2{
+      margin-bottom: 30px;
+      position: relative;
+      color: white;
+   }
+
+   #wedding h2:after{
+      background-color:white;
+   }
+
+   .section{
+      margin-bottom: 50px;
+   }
+
+   .section h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'gotham-light';
+      color: #666;
+      margin-bottom: 60px;
+
+   }
+
+   .section h2:after {
+      background-color: #666;
+      content: "";
+      display: block;
+      height: 1px;
+      position: relative;
+      top: 15px;
+      width: 30px;
+      margin: auto;
+   }
+
+   .section h3 {
+     font-family: gotham-light;
+     font-size: 18px;
+     text-align: center;
+     color: #666;
+
+     margin-bottom: 25px;
+
+  }
+
+
+  .section p {
+   font-family: 'gotham-light';
+   font-size: 20px;
+}
+
+.section .warning {
+   margin-top: 20px;
+   font-family: 'Helvetica';
+   color: #777;
+   font-size: 12px;
+}
+
+.hello{
+   margin-top: 20px; 
+}
+
+.hello .portrait img{
+   border-radius: 100%;
+}
+
+.hello p.hola{
+   font-size: 19px;
+   line-height: 31px;
+   color: #808080;
+   font-family: 'gotham-thin';
+}
+
+big{
+   font-size: 49px;  
+}
+
+
+#contacto .contact-subtitle{
+   margin-bottom: 20px;
+   font-size: 19px;
+   line-height: 31px;
+   color: #808080;
+   font-family: 'gotham-thin';
+}
+
+#contacto {
+   background-color: rgba(156, 154, 154, 0.18);
+   padding-top: 20px;
+   padding-bottom: 35px;
+   margin-bottom: 0;
+}
+
+#contacto .form-control{
+   margin-bottom: 15px;
+}
+
+textarea.form-control{
+   resize: vertical; /* user can resize vertically, but width is fixed */
+}
+
+#contacto a{
+   color: #D9534F;
+}
+
+#contacto .btn-submit {
+   text-transform: uppercase;
+}
+
+footer#prefooter{
+   background-color: #3A3939;
+   color: white;
+   text-align: center;
+   margin-bottom: 0px;
+   padding: 20px 0px 40px;
+   font-family: 'gotham-light';
+}
+
+footer#main-footer{
+   background-color: black;
+   color: white;
+   text-align: center;
+   margin-bottom: 0px;
+   padding: 20px 0px 40px;
+   font-family: 'gotham-light';
+}
+
+
+footer#main-footer a{
+
+   color: #D9534F
+
+}
+
+
+#parallax1{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   background: black;
+}
+
+
+#parallax2{
+   position: absolute;
+   left: 20%;
+   top: 50%;
+   background: yellow;
+}
+
+
+#parallax3{
+   position: absolute;
+   left: 70%;
+   top: 40%;
+   background: pink;
+}
+
+
+#parallax4{
+   position: absolute;
+   left: 10%;
+   top: 20%;
+   background: orange;
+}
+
+
+.stellar-test{
+   position: absolute;
+}
+
+
+
+.helvetica {
+   font-family: Helvetica;
+}
+
+
+
+/*modals*/
+
+
+
+.modal-servicio .modal-header{
+   background-color: #D9534F;
+   color: white;
+}
+
+.modal-servicio .modal-body{
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   padding: 0px;
+}
+
+.modal-title{
+   /*padding-left: 58px;*/
+}
+
+.modal-servicio .modal-header .close{
+   color: white;
+   opacity: 1;
+}
+
+.modal-servicio .modal-content{
+   border-radius: 0px;
+}
+
+.price-table{
+   width: 100%;
+}
+
+.section.prices .price-table{
+   margin-bottom: 20px;
+}
+
+.modal-servicio .modal-content .table-wrap{
+   background-color: rgba(255,255,255,0.6);
+   padding: 10px 20px;
+}
+
+.price-table .service-name{
+   padding: 10px 5px;
+}
+
+.price-table thead th {
+   color: #db524a;
+   font-weight: normal;
+   font-size: 20px;
+   margin-top: 20px;
+}
+.price-table .service-price{
+   padding: 10px 7px;
+   font-size: 22px;
+   line-height: 1;
+   text-align: right;
+   white-space: nowrap;
+}
+
+.price-table .service-price small{
+   font-size: 12px;
+}
+
+.price-table tr{
+   border-bottom: 1px solid rgba(217, 83, 79, 0.22);
+}
+
+.price-table tr:last-child{
+   border-bottom: 0px;
+}
+
+.price-table tr.even{
+   /*background-color: rgba(217, 83, 79, 0.32);*/
+}
+
+.price-table caption {
+   font-size: 12px; 
+   padding: 10px 5px;
+}
+ 
+.modal-servicio .modal-mainimg{
+
+   position: absolute;
+   border-radius: 100%;
+   z-index: 10;
+   top: -26px;
+   left: -40px;
+   width: 100px;
+   height: 100px;
+}
+
+.modal-servicio .modal-dialog{
+   margin-top: 88px;
+}
+
+
+#modal-massage .modal-body{
+
+   background-image: url(../img/massage1.jpg);
+
+}
+
+#modal-makeup .modal-body{
+
+   background-image: url(../img/makeup.jpg);
+
+}
+
+
+#modal-preso .modal-body{
+
+   background-image: url(../img/preso.png);
+
+}
+
+#modal-manicure .modal-body{
+
+   background-image: url(../img/manicure1.jpg);
+
+}
+
+
+
+#modal-wax .modal-body{
+
+   background-image: url(../img/wax.jpg);
+
+}
+
+
+#modal-facial .modal-body{
+
+   background-image: url(../img/facial2.jpg);
+
+}
+
+
+
+
+#modal-eyes .modal-body{
+
+   background-image: url(../img/eyes1.jpg);
+
+}
+
+
+@media (max-width: 990px){
+   #seccion0 header h1{
+      font-size: 80px;
+   }
+
+
+   #seccion0 header h2{
+      font-size: 33px;
+
+   }
+
+   .service {
+      max-width: 360px;
+      margin: 10px auto 20px;
+   }
+
+   #wedding .portrait img {
+      margin-top: 70px;
+   }
+}
+
+
+
+@media (max-width: 768px){
+   #seccion0 header h1{
+      font-size: 50px;
+   }
+
+
+   #seccion0 header h2{
+      font-size: 20px;
+
+   }
+
+   #seccion0 #home-buttons a {
+      font-size: 16px;
+      margin: 0px 20px 10px;
+      width: 64%;
+   }
+
+   .hello p.hola {
+      font-size: 15px;
+      line-height: 27px;
+      color: #808080;
+      font-family: 'gotham-light';
+   }
+
+   .section p{
+      font-size: 15px;
+   }
+
+   #wedding p{
+      text-align: center;
+   }
+
+   #prefooter h2 { 
+      font-size: 20px;
+   }
+
+   #seccion1 .service .img-wrapper .overlay {
+      display: none;
+   }
+}
+
+@media (max-width: 570px){
+   #seccion1 .price-wrapper {
+      display: none;
+   }
+   #seccion1 .text-wrapper {
+      display: block;
+      text-align: center;
+
+   }
+   #seccion1 .text-wrapper p {
+      font-size: 12px;
+   }
+}
+
+
+
+
+
+
+
